@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            table, tr, thead,td{
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+            
+            thead{
+                background-color: lightblue;
+                font-size: 1.2em;
+            }
+            h1,h2,h3{
+                text-align: center;
+                background-color: lightgreen;
+            }
+            .contenedortabla{margin-left: 40%}
+                               
+            
+            .formulario{
+                align-content: center
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>Bienvenido</h1>
+        
+        
+    
+        <h2>Registrarse</h2>
+        <form action="saludar" method="post">
+           
+            <input type="hidden" name="option" value="reg">
+            <input type="submit" value="Registrarse">
+        </form>
+           
+        <h2>Login</h2>
+        <form action="saludar" method="post">
+            
+            
+            <input type="text" name="usuario" placeholder="Usuario">
+            <input type="password" name="password" placeholder="Password">
+            <input type="hidden" name="option" value="log">
+            <input type="submit" value="Iniciar sesión">
+        </form>
+
+    </body>
+</html>

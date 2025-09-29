@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ejercicio Servidor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *  {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduzca su cuenta de usuario</h1>
+        <br>
+        <br>
+        <form method="post" action="servidor">
+            Introduzca su nombre <br>
+            <input type="text" name="nombre"><br>
+            Introduzca su contraseña <br>
+            <input type="text" name="password"><br> 
+            <input type="hidden" name="option" value="login">
+            <input type="submit">
+        </form>
+        
+        <h1>¿No tiene cuenta de usuario?</h1>
+        <h1>Crear cuenta</h1>
+        <form method="post" action="servidor">
+            <input type="hidden" name="option" value="create">
+            <input type="submit">
+        </form>
+    </body>
+</html>
